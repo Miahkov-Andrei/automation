@@ -32,7 +32,7 @@ public class MethodsBasicClass {
         desiredCapabilities.setCapability("deviceName", "Samsung J7");
         desiredCapabilities.setCapability("automationName", "UiAutomator2");
         desiredCapabilities.setCapability("app", "C:/automation/autotests/app-stageServer-autotests.apk");
-        desiredCapabilities.setCapability("noReset", "true");
+        desiredCapabilities.setCapability("noReset", "false");
 
         URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
 
