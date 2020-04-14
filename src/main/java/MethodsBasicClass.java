@@ -13,6 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class MethodsBasicClass {
 
@@ -117,7 +118,7 @@ public class MethodsBasicClass {
 
     public String getText(String id) {
         WebDriverWait wait = new WebDriverWait(driver, 55);
-        wait.until(elementToBeClickable(By.id(id)));
+        wait.until(presenceOfElementLocated(By.id(id)));
         MobileElement element = (MobileElement) driver.findElementById(id);
         return element.getAttribute("text");
     }

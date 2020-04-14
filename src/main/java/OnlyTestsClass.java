@@ -1,6 +1,3 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -60,8 +57,6 @@ public class OnlyTestsClass extends MethodsBasicClass {
         clickById("com.coherohealth.breathesmart:id/ugi_manage_account_section");
         clickById("com.coherohealth.breathesmart:id/ll_manage_subscrobtion_container");
 
-        WebDriverWait wait = new WebDriverWait(driver, 55);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.sec.android.app.sbrowser:id/location_bar_edit_text")));
         String x = getText("com.sec.android.app.sbrowser:id/location_bar_edit_text");
 
         driver.navigate().back();
