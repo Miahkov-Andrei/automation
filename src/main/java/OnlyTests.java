@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class OnlyTestsClass extends MethodsBasicClass {
+public class OnlyTests extends MethodsBasic {
 
 
 
@@ -62,7 +62,7 @@ public class OnlyTestsClass extends MethodsBasicClass {
         driver.navigate().back();
         driver.navigate().back();
 
-        softAssertComparison(x, "\u200Estore.coherohealth.com");
+        Assert.assertEquals(x, "\u200Estore.coherohealth.com");
 
     }
 

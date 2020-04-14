@@ -15,7 +15,7 @@ import java.net.URL;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
-public class MethodsBasicClass {
+public class MethodsBasic {
 
     public AndroidDriver driver;
     SoftAssert softAssert = new SoftAssert();
